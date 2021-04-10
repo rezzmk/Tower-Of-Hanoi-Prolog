@@ -8,18 +8,18 @@
 /*
 *  Manual solving of a 3 disk tower of hanoi
 *
-*  TA	  TD	Taux  Stack	    Term	           Segment
-*  -----------------------------------------------------------
-*  1,2,3				        move 3 TA TD Taux 	
-*  1,2,3			  1	        move 2 TA Taux TD	
-*  2,3		    1	  1.1	    move 1 TA TD Taux  [TA, Taux]
-*  3	  2	    1	  1.2               		   [TA, TD]
-*  3	  1,2		  1.3	    move 1 Taux TD TA  [Taux, TD]
-*  1,2	  3	    2		                           [TA, Taux]
-*  1,2	  3	    3	            move 2 TD TA Taux	
-*  1	  2	    3	  3.1	    move 1 TD Taux TA  [TD, TA]
-*  1		    2,3	  3.2		                   [TD, Taux]
-*  1,2,   3	    3.3	            move 1 TA TD Taux  [TA, Taux]
+*  TA       TD      Taux        Stack       Term                Segment
+*  --------------------------------------------------------------------
+*  1,2,3                                    move 3 TA TD Taux 	
+*  1,2,3    1                               move 2 TA Taux TD
+*  2,3      1                   1.1         move 1 TA TD Taux  [TA, Taux]
+*  3        2       1           1.2                            [TA, TD]
+*  3        1,2                 1.3         move 1 Taux TD TA  [Taux, TD]
+*  1,2      3       2                                          [TA, Taux]
+*  1,2      3       3                       move 2 TD TA Taux	
+*  1        2       3           3.1         move 1 TD Taux TA  [TD, TA]
+*  1        2,3                 3.2                            [TD, Taux]
+*  1,2      3                   3.3         move 1 TA TD Taux  [TA, Taux]
 */
 
 /*
